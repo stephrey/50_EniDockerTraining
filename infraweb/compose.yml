@@ -1,0 +1,50 @@
+services:
+  rp:
+    build: ./rp-apache
+    image: rp-apache:1.0
+    container_name: rp
+    networks: 
+      - infraweb-network
+    depends_on:
+      - appsrv
+    ports:
+      - 80:80
+
+  appsrv:
+    build: ./appsrv-tomcat
+    image: appsrv-tomcat:1.0
+    container_name: appsrv
+    networks:
+      - infraweb-network
+    depends_on:
+      - dbsrv
+#    ports:
+#      - 8080:8080
+
+  dbsrv:
+    build: ./dbsrv-mariadb
+    image: dbsrv-mariadb:1.0
+    container_name: dbsrv
+    networks:
+      - infraweb-network
+#    ports:
+#      - 3306:3306
+    volumes:
+      - mariadb:/var/lib/mysql
+    environment:
+      - MARIADB_RANDOM_ROOT_PASSWORD=true
+
+networks:
+  infraweb-network:
+    driver: bridge
+    name: infraweb-network
+    ipam:
+      config:
+        - subnet: 172.32.0.0/16
+          gateway: 172.32.0.1
+
+volumes:
+  mariadb:
+    driver: local
+    name: mariadb
+    

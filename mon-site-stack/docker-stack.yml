@@ -1,0 +1,7 @@
+services:
+  mon-site-service:
+    image: stephrey/mon-site:x64-1.0
+    ports:
+      - 80:80
+    deploy:
+      replicas: 3

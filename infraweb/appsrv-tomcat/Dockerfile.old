@@ -1,0 +1,25 @@
+FROM ubuntu:22.04
+
+# installation de Java 11 en utilisant les paquets de la distribution
+# les index de paquets ne sont jamais prsent dans les images : il faut
+# les fenerer avec apt update
+RUN apt update && \
+    apt install -y openjdk-11-jdk
+
+# installation de tomcat en transferant le contenu de l'archive dans l'image
+ADD ./sources/apache-tomcat-9.0.87.tar.gz /usr/local
+
+# creer un lien symbolique : /usr/local/tomcat -> /usr/local/apache-tomcat-9.0.87
+RUN ln -s /usr/local/apache-tomcat-9.0.87 /usr/local/tomcat
+
+#installer l'application web dans tomcat
+COPY ./sources/banque-web.war /usr/local/tomcat/webapps
+
+# Variables d'environement
+# La variable CATALINA8HOME doit contenir le répertoire d'installation de Tomcat
+ENV CATALINA_HOME=/usr/local/tomcat
+# on ajoute le repertoire bin/ de tomcat
+ENV PATH=$PATH:/usr/local/tomcat/bin
+
+# lancer le processus avec ENTRYPOINT ou CMD
+ENTRYPOINT ["catalina.sh", "run"]

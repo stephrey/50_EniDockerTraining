@@ -1,0 +1,62 @@
+services:
+  httpd1:
+    image: httpd:latest
+    container_name: httpd1
+    networks:
+      - mon-reseau-1
+    ports:
+      - 81:80
+    volumes:
+      - httpd-data1:/partage
+  httpd2:
+    image: httpd:latest
+    container_name: httpd2
+    networks:
+      - mon-reseau-1
+    ports:
+      - 82:80
+    volumes:
+      - httpd-data1:/partage
+  httpd3:
+    image: httpd:latest
+    container_name: httpd3
+    networks:
+      - mon-reseau-2
+    ports:
+      - 83:80
+    volumes:
+      - httpd-data2:/partage
+  httpd4:
+    image: httpd:latest
+    container_name: httpd4
+    networks:
+      - mon-reseau-2
+    ports:
+      - 84:80
+    volumes:
+      - httpd-data2:/partage
+
+networks:
+  mon-reseau-1:
+    driver: bridge
+    name: mon-reseau-1
+    ipam:
+      config:
+      - subnet: 172.28.0.0/16
+        gateway: 172.28.0.1
+  mon-reseau-2:
+    driver: bridge
+    name: mon-reseau-2
+    ipam:
+      config:
+        - subnet: 172.29.0.0/16
+          gateway: 172.29.0.1
+
+volumes:
+  httpd-data1:
+    driver: local
+    name: httpd-data1
+  httpd-data2:
+    driver: local
+    name: httpd-data2
+
