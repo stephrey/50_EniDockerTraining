@@ -4,7 +4,7 @@ Write a first Dockerfile and observe what happens. Using the Dive tool, find out
 
 ---
 
-## the work to be done
+## The work to be done
 
 Based on alpine image, create a new image. In the folder /apps an empty text file is present as "file.txt"
 
