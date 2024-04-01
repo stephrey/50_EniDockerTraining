@@ -8,7 +8,7 @@ see <em>https://github.com/stephrey/50_EniDockerTraining/tree/main/04_HandsOn/TP
 docker tag mon-site:1.0 stephrey/mon-site:x64-1.0
 
 # lancer la stack
-docker deploy --compose-file docker-stack.yml MaStack
+<em>docker stack deploy --compose-file docker-stack.yml MaStack</em>
 
 # au besoin modifier le nombre de replicat et reployer
 
