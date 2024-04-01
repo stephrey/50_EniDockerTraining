@@ -1,5 +1,5 @@
 # use the "mon-site" image as a base
-...
+see <em>https://github.com/stephrey/50_EniDockerTraining/tree/main/04_HandsOn/TP6/mon-site</em>
 
 # create yaml file docker-stack.yml
 ...
