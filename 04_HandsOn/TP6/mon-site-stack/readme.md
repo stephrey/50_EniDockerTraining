@@ -1,4 +1,4 @@
-# use the mon-site image as a base
+# use the "mon-site" image as a base
 ...
 
 # create yaml file docker-stack.yml
