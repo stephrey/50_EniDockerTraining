@@ -34,6 +34,9 @@ See the description in the attached PDF file <em>https://github.com/stephrey/50_
     - attacht the container "httpd1" and "httpd2" to the volume "httpd-data1"
     - - attacht the container "httpd3" and "httpd4" to the volume "httpd-data2"
 
+### Generate and launch the container
+* <em>docker compose up -d</em>
+
 ### test the network setting
 * test the network setting using <em>docker network inspect</em>
 
