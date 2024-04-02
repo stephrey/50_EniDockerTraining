@@ -23,6 +23,13 @@ See description here <em>https://github.com/stephrey/50_EniDockerTraining/tree/m
 * define volumes
     - create "mariadb"
 
+### to build the stack
+* <em>docker compose build</em>
+
 ### to launch the stack
-* docker compose build up -d
-  
+* <em>docker compose up</em>
+
+### to stop the stack
+* <em>docker compose down</em>
+
+
