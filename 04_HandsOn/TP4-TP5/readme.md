@@ -19,28 +19,23 @@ See the description in the attached PDF file <em>https://github.com/stephrey/50_
 
 ---
 
-## The result
+### create Docker Compose file as compose.yml
+* define services:
+  - create "httpd1", "httpd2", "httpd3" and "httpd4" container based on httpd:latest
+* define network "mon-reseau-1" and "mon-reseau-2"
+    - define subnet for "mon-reseau-1" as 172.28.0.0/16
+    - define gateway for "mon-reseau-1" as 172.28.0.1
+    - define subnet for "mon-reseau-2" as 172.29.0.0/16
+    - define gateway for "mon-reseau-2" as 172.29.0.1
+    - attacht the container "httpd1" and "httpd2" to the network "mon-reseau-1"
+    - attacht the container "httpd3" and "httpd4" to the network "mon-reseau-2"
+* define volumes
+    - create to volume "httpd-data1" and "httpd-data2"
+    - attacht the container "httpd1" and "httpd2" to the volume "httpd-data1"
+    - - attacht the container "httpd3" and "httpd4" to the volume "httpd-data2"
 
-The result consist of 3 distinct images, one for each container.
+### test the network setting
+* test the network setting using <em>docker network inspect</em>
 
-### Create a folder for each container
-
-Create a folder and a dedicated Dockerfile for each container
-- dbsrv-mariadb
-- appsrv-tomcat
-- rp-apache
-
-### Generate the container
-- <em>docker build -t dbsrv-mariadb:1.0 .</em>
-- <em>docker build -t appsrv-tomcat:1.0 .</em>
-- <em>docker build -t rp-apache:1.0</em>
-
-### create a Docker Compose file, to generate all container in one shot
-- Navigate to the directory containing the docker-compose.yml file
-<em>docker compose up -d</em>
-
-- If you want to force a rebuild of the images before starting the services
-<em>docker compose up -d --build</em>
-
-- If you want to stop the services
-<em>docker compose down</em>
+### test the volume setting
+* test the volumes setting using <em>docker volume inspect</em>
