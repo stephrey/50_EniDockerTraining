@@ -10,4 +10,19 @@ See description here <em>https://github.com/stephrey/50_EniDockerTraining/tree/m
 
 ---
 
-### to 
+### create Docker Compose file as compose.yml
+
+* define services:
+  - create the reverse-proxy server
+  - create Tomcat server
+  - create MariaDB server
+* define network
+    - create "infraweb-network" network
+    - define subnet as 172.32.0.0/16
+    - define gateway as 172.32.0.1
+* define volumes
+    - create "mariadb"
+
+### to launch the stack
+* docker compose build up -d
+  
