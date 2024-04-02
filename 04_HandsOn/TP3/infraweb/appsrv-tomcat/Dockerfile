@@ -1,27 +1,27 @@
 FROM ubuntu:22.04
 
-# installation de tomcat en transferant le contenu de l'archive dans l'image
+# install tomcat by transferring the contents of the archive to the image
 ADD ./sources/apache-tomcat-9.0.87.tar.gz /usr/local
 
-#installer l'application web dans tomcat
+#install web application in tomcat
 COPY ./sources/banque-web.war /usr/local/apache-tomcat-9.0.87/webapps
 
-# installation de Java 11 en utilisant les paquets de la distribution
-# les index de paquets ne sont jamais prsent dans les images : il faut
-# les fenerer avec apt update
+# Java 11 installation using distribution packages
+# package indexes are never present in images: you must
+# install them with apt update
 RUN apt update && \
     apt install -y openjdk-11-jdk && \
-    # creer un lien symbolique : /usr/local/tomcat -> /usr/local/apache-tomcat-9.0.87
+    # create a symbolic link : /usr/local/tomcat -> /usr/local/apache-tomcat-9.0.87
     ln -s /usr/local/apache-tomcat-9.0.87 /usr/local/tomcat
 
-# Variables d'environement
-# La variable CATALINA8HOME doit contenir le répertoire d'installation de Tomcat
+# Environment variables
+# The CATALINA_HOME variable must contain the Tomcat installation directory.
 ENV CATALINA_HOME=/usr/local/tomcat
-# on ajoute le repertoire bin/ de tomcat
+# add tomcat's bin/ directory
 ENV PATH=$PATH:/usr/local/tomcat/bin
 
-# expose port 8080, c'est à dire préciser pour le monde extérieur sur quel pour le container écoute
+# exposes port 8080, i.e. specifies for the outside world on which port the container listens
 EXPOSE 8080
 
-# lancer le processus avec ENTRYPOINT ou CMD
+# start the process with ENTRYPOINT or CMD
 ENTRYPOINT ["catalina.sh", "run"]
