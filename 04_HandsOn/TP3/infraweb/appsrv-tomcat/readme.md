@@ -23,6 +23,8 @@
 
 ### add environement variables
 - use the shell command "env" to check the environment variables
+- <em>docker exec -i 'container-name' /bin/bash</em>
+- <em>env</em>
 
 ### to launch the container ( environment variables are declared internally in the Dockerfile)
 - <em>docker run -d appsrv-tomcat:1.0</em>
