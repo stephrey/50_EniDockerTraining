@@ -24,10 +24,13 @@ See description here <em>https://github.com/stephrey/50_EniDockerTraining/tree/m
     - create "mariadb"
 
 ### to build the stack
-* <em>docker compose build</em>
+* <em>docker compose build </em>
 
 ### to launch the stack
-* <em>docker compose up</em>
+* <em>docker compose up -d</em>
+
+### to rebuild the stack dynamicly
+* <em>docker compose up -d --build</em>
 
 ### to stop the stack
 * <em>docker compose down</em>
