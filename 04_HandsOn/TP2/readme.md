@@ -1,4 +1,4 @@
-# First step with the Dockerfile
+# TP2: First step with the Dockerfile
 
 In this example, you write a first Dockerfile and observe what happens. Using the Dive tool, find out how many layers the resulting image consists of.
 
