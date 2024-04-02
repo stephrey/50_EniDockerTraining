@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 # install tomcat by transferring the contents of the archive to the image
 ADD ./sources/apache-tomcat-9.0.87.tar.gz /usr/local
 
-#install web application in tomcat
+# install web application in tomcat
 COPY ./sources/banque-web.war /usr/local/apache-tomcat-9.0.87/webapps
 
 # Java 11 installation using distribution packages
