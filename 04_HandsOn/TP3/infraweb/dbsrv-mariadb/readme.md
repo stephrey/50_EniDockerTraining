@@ -1,4 +1,4 @@
-### Create the Dockerfile
+### create the Dockerfile
 * Build a new image from mariadb:10.11
 * copy the sources <em>./sources/init-db.sql</em> in <em>/docker-entrypoint-initdb.d</em>
 
