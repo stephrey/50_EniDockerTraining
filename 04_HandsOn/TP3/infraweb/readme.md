@@ -6,7 +6,7 @@ See description here <em>https://github.com/stephrey/50_EniDockerTraining/tree/m
 
 ---
 
-> Please note that the technical stack for this example will be launched on hardware. (no swarm deployment)
+> Please note that the technical stack for this example will be launched on the host (no swarm deployment).
 
 ---
 
