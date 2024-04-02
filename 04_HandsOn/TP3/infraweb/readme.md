@@ -5,3 +5,6 @@ In this example, you write a complete technical stack by creating 3 custom image
 See description here <em>https://github.com/stephrey/50_EniDockerTraining/tree/main/04_HandsOn/TP3</em>
 
 ---
+> Please note that the technical stack for this example will be launched on hardware. (no swarm deployment)
+--
+### to 
