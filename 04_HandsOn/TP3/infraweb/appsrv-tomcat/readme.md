@@ -13,7 +13,7 @@
 
 ### check if Java is working properly
 - <em>docker run -d appsrv-tomcat:1.0</em>
-- <em>docker exec -i <container-name> /bin/bash</em>
+- <em>docker exec -i 'container-name' /bin/bash</em>
 - <em>java -version</em>
 
 ### add applications
