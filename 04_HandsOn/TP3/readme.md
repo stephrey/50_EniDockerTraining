@@ -1,16 +1,20 @@
-# Docker personalized images
+# TP3: Docker personalized images
 
-Preparing a complete technical stack by creating 3 custom images from Dockerfile
+In this example, you write a complete technical stack by creating 3 custom images from Dockerfile.
+
 
 ---
 
 ## The work to be done
 
-Based on predefined images (MariaDB, Tomcat and apache) build a web application using Dockerfiles
+Based on predefined images (MariaDB, Tomcat and apache) build a web application using Dockerfiles.
+See the description in the attached PDF file <em>https://github.com/stephrey/50_EniDockerTraining/blob/main/04_HandsOn/TP3/tp-module-3_a6zllkdx6gr.pdf</em>
+
+---
 
 ## The result
 
-The result consist of 3 distinct file. One for each container
+The result consist of 3 distinct images, one for each container.
 
 ### Create a folder for each container
 
