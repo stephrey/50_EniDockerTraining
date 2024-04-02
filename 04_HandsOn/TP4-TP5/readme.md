@@ -38,7 +38,9 @@ See the description in the attached PDF file <em>https://github.com/stephrey/50_
 * <em>docker compose up -d</em>
 
 ### test the network setting
-* test the network setting using <em>docker network inspect</em>
+* test the network setting using <em>docker network inspect mon-reseau-1</em>
+* etc...
 
 ### test the volume setting
-* test the volumes setting using <em>docker volume inspect</em>
+* test the volumes setting using <em>docker volume inspect httpd-data2</em>
+* etc...
