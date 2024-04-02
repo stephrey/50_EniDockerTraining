@@ -1,4 +1,4 @@
-### Create Dockerfile
+### create Dockerfile
 * Build a new image from ubuntu:22.04
 * add the local sources <em>./sources/apache-tomcat-9.0.87.tar.gz</em> in the image folder <em>/usr/local</em>
 * coping the web app <em>./sources/banque-web.war</em> to <em>/usr/local/apache-tomcat-9.0.87/webapps</em>
