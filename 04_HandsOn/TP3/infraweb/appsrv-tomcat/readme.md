@@ -34,5 +34,7 @@ we should win a layer
 - <em>docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest appsrv-tomcat:1.0</em>
 
 ### expose tomcat ports
+* ...
 
 ### stop and restart tomcat
+* ...
