@@ -1,18 +1,13 @@
-### build the image
-* the image is already build, it not :
-  - <em>docker build -t mon-site:1.0 mon-site/</em>
+# TP6 docker services and stack
+In this example, the first step is to create a service. 
+Then you deploy a stack using a YAML file
 
-### test the image
-* <em>docker run -d mon-site:1.0</em>
+---
 
-### start the stack
-* <em>docker stack deploy --compose-file docker-stack.yml MyStack</em>
+## create a service
+Create a service with 3 replicas base on the image "mon-site:1.0"
+Update the replicas size, list the service and its process
 
-### update the service
-* list the stack and identify the service
-  - <em>docker stack services MaStack</em>
-* resize the service replicas:
-  - <em>docker service scale <service_name>=<replica_count></em>
-
-### remove the service
-* <em>docker stack rm MyStack</em>
+## create and deploy a stack
+Tag the image "mon-site:1.0" and register it on a registry. Create a docker-stack YAML file and difine the service.
+Scale the services stack
