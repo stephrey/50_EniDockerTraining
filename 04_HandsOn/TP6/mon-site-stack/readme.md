@@ -18,7 +18,7 @@
 
 ### update the service
 * list the stack and identify the service
-  - <em>docker stack services MaStack</em>
+  - <em>docker stack services MyStack</em>
 * resize the service replicas:
   - <em>docker service scale <service_name>=<replica_count></em>
 
