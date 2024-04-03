@@ -1,8 +1,8 @@
 ### build the image
-<em>docker build -t mon-site:1.0 mon-site/</em>
+* <em>docker build -t mon-site:1.0 mon-site/</em>
 
 ### test the image
-<em>docker run -d mon-site:1.0</em>
+* <em>docker run -d mon-site:1.0</em>
 
 ### start the service
 * as example with 3 replicas
