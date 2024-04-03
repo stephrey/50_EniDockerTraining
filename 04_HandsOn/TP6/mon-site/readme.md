@@ -10,6 +10,8 @@
 
 ### update the service
 * <em>docker service update --replicas 1 'service-name'</em>
+* alternativly use:
+  - <em>docker service scale 'service-name'=2</em>
 
 ### remove the service
 * <em>docker service rm 'service-name'</em>
