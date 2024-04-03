@@ -36,4 +36,4 @@ See description here <em>https://github.com/stephrey/50_EniDockerTraining/tree/m
 * <em>docker compose down</em>
 
 ### to check the docker compose file syntax
-* <em>docker compose vonfig</em>
+* <em>docker compose config</em>
