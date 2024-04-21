@@ -1,0 +1,8 @@
+# Ignore PDF files
+*.pdf
+
+# Ignore Markdown files
+*.md
+
+# ignore png files
+*.png
