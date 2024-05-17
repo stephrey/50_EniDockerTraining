@@ -5,7 +5,7 @@ Docker est une plate-forme de conteneurs logiciels virtualisés qui permet d'emp
 <h3>[https://cpi.ch/cours/docker-creer-et-administrer-des-conteneurs-virtuels-dapplications](https://cpi.ch/cours/docker-creer-et-administrer-des-conteneurs-virtuels-dapplications/)</h3>
 ---
 
-## Contenu
+## Contenu:
 
 * Introduction
 * Docker en production
@@ -16,7 +16,7 @@ Docker est une plate-forme de conteneurs logiciels virtualisés qui permet d'emp
 * Pour aller plus loin
 
 
-## Compétences visées
+## Compétences visées:
 
 * Appréhender le positionnement de Docker et des conteneurs
 * Mettre en oeuvre la solution ainsi que les produits de l'écosystème pour déployer rapidement des applications à l'aide de conteneurs
@@ -25,14 +25,14 @@ Docker est une plate-forme de conteneurs logiciels virtualisés qui permet d'emp
 * Identifier les risques et challenges inhérents à Docker afin d'anticiper les bonnes solutions
 
 
-## Méthodologie
+## Méthodologie:
 
 Depuis votre domicile ou votre entreprise. Vous rejoignez un environnement de formation en ligne, à l'aide de votre ordinateur, tout en étant éloigné physiquement du formateur et des autres participants. Vous êtes en totale immersion avec le groupe et participez à la formation dans les mêmes conditions que le présentiel.
 
 En début et en fin de formation, les stagiaires réalisent une auto-évaluation de leurs connaissances et compétences en lien avec les objectifs de la formation. L'écart entre les deux évaluations permet ainsi de mesurer leurs acquis.
 
 
-## Public & Prérequis
+## Public & Prérequis:
 
 Cette formation s'adresse aux administrateurs, responsables d'exploitation et de production, chefs de projet, développeurs d'applications, architectes techniques, et toute personne souhaitant mettre en oeuvre Docker pour déployer ses applications.
 
@@ -41,7 +41,7 @@ Prérequis :
 * Exploiter des réseaux TCP/IP
 * Utiliser la ligne de commande et les scripts Shell en environnement Linux
 
-## Titre obtenu
+## Titre obtenu:
 
 Vous recevez une attestation de suivi de cours CPI Formations à la fin de cette formation, pour autant que votre taux de présence atteigne 80%.
 
